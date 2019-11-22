@@ -1,0 +1,23 @@
+{
+  "name": "sterling-ts",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/Sterling.js",
+  "types": "dist/Sterling.d.ts",
+  "scripts": {
+    "build-bundle": "npm run build-ts; npm run rollup",
+    "build-ts": "tsc -w -p tsconfig.json",
+    "rollup": "rollup -c --environment VERSION:$npm_package_version"
+  },
+  "author": {
+    "name": "Tristan Dyer",
+    "email": "atristandyer@gmail.com",
+    "url": "https://www.github.com/atdyer"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "1.27.4",
+    "rollup-plugin-license": "0.12.1",
+    "typescript": "3.7.2"
+  }
+}
